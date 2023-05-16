@@ -1,0 +1,9 @@
+- hosts: ans
+  gather_facts: true
+  roles:
+    - role: ansible-role-openvpn
+      openvpn_port: 4300
+      openvpn_sync_certs: true
+      clients:
+        - Vienna
+        - Gais
